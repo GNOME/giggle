@@ -1659,6 +1659,7 @@ giggle_rev_list_view_init (GiggleRevListView *rev_list_view)
 	GtkTreeViewColumn     *column;
 	gint                   font_size;
 	GtkCellRenderer       *cell;
+	GtkWidgetClass* widgetClass;
 
 	priv = GET_PRIV (rev_list_view);
 
@@ -1691,6 +1692,12 @@ giggle_rev_list_view_init (GiggleRevListView *rev_list_view)
 
 	gtk_tree_view_insert_column (GTK_TREE_VIEW (rev_list_view),
 				     priv->emblem_column, -1);
+
+	/*Force loading of emblems*/
+	widgetClass = GTK_WIDGET_GET_CLASS( rev_list_view );
+	if( widgetClass && widgetClass->style_updated ) { 
+		(*widgetClass->style_updated)(GTK_WIDGET(rev_list_view)); 
+	}
 
 	/* graph renderer */
 	priv->graph_column = gtk_tree_view_column_new ();
