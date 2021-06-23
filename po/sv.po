@@ -1,9 +1,9 @@
 # Giggle
 # Copyright giggle's COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the giggle package.
 # Richard Hult <richard@imendio.com>, 2007.
 # Andreas Rönnquist <gusnan@gusnan.se>, 2014.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015, 2016.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2015, 2016, 2020.
 # Josef Andersson <l10nl18nsweja@gmail.com>, 2017.
 #
 # Vi översätter INTE utvecklartermer som branch, patch, commit, osv.
@@ -17,9 +17,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Giggle 0.1\n"
+"Project-Id-Version: Giggle\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/giggle/issues\n"
-"POT-Creation-Date: 2019-09-19 12:12+0000\n"
+"POT-Creation-Date: 2020-07-05 13:06+0000\n"
 "PO-Revision-Date: 2020-02-02 02:05+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -829,9 +829,3 @@ msgid ""
 msgstr ""
 "Ett fel inträffade när filen skulle sparas:\n"
 "%s"
-
-#~ msgid "giggle"
-#~ msgstr "giggle"
-
-#~ msgid "Find..."
-#~ msgstr "Sök..."
